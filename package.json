@@ -1,0 +1,15 @@
+{
+  "name": "praticanode",
+  "version": "1.0.0",
+  "description": "Pratica de NodeJs com ES6",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maicon Douglas",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
