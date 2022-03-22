@@ -33,6 +33,16 @@ fs.readFile(
   "utf8",
   (err, data) => {
     if (err) throw err;
-    console.log(data);
+    console.log("Dados do arquivo: " + data);
+  }
+);
+
+// Renomear arquivo. Não funciona se for executado na mesma linha de execução de criação e escrita de dados.
+fs.rename(
+  path.join(__dirname, "/novaPasta", "arquivo.txt"),
+  path.join(__dirname, "/novaPasta", "novo-nome.txt"),
+  (err) => {
+    if (err) throw err;
+    console.log("Arquivo renomeado com sucesso.");
   }
 );
